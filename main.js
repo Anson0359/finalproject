@@ -1,6 +1,6 @@
 //初始地圖
 let mapsize = 15;//地圖大小 (15*15)
-let blockLength = 900/mapsize;//單格邊長
+let blockLength = 600/mapsize;//單格邊長
 let snacklength = 3;//蛇長
 let speed = 1100;//移動速度(更新間隔時間)
 let modecode = 1;//遊戲模式

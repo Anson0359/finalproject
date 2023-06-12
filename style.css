@@ -1,29 +1,31 @@
 body{
     background-image: url(bodybackground1.webp);
+    width:100%;
+    height:100%;
 }
 h1{
-    border: 10px solid black;
+    border: 5px solid black;
     background-color: #AAAAFF;
-    font-size:80px;
+    font-size:40px;
     position:absolute;
     top: 10px;
-    left:35%;
-    width:300px;
-    height:100px;
+    left:70%;
+    width:150px;
+    height:60px;
     text-align: center;
     border-radius: 20px;
     vertical-align: middle;
 }
 p{
-    font-size:80px;
+    font-size:40px;
 }
 
 #lowerSpeed{
     border: 0px solid black;
     border-radius: 50px;
-    width:80px;
-    height:80px;
-    font-size:80px;
+    width:40px;
+    height:40px;
+    font-size:40px;
     text-align: center;
     background-color: #84C1FF;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
@@ -32,9 +34,9 @@ p{
 #higherSpeed{
     border: 0px solid black;
     border-radius: 50px;
-    width:80px;
-    height:80px;
-    font-size:80px;
+    width:40px;
+    height:40px;
+    font-size:40px;
     text-align: center;
     background-color: #84C1FF;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
@@ -43,46 +45,45 @@ p{
 canvas{
     border: 10px solid black;
     position:absolute;
-    top: 200px;
-    left:25%;
+    top: 50px;
+    left:10%;
 }
 
 #gamemode{
-    font-size:80px;
-    /* border: 2px solid #000; */
+    font-size:50px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
     position:absolute;
-    top: 200px;
-    left:70%;
+    top: 150px;
+    left:60%;
     text-align: center;
-    width:800px;
-    height:1000px;
+    width:500px;
+    height:500px;
     background-color: #AAAAFF;
 }
 
 #mode1{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
 }
 #mode2{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
 }
 #mode3{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
 }
 
 #run{
-    font-size:80px;
+    font-size:40px;
     position:absolute;
     border: 3px solid black;
     border-radius: 20px;
-    top: 800px;
-    left:31%;
-    width:350px;
-    height:110px;
+    top: 400px;
+    left:33%;
+    width:200px;
+    height:70px;
     text-align: center;
     background-color: #AAAAFF;
 }
