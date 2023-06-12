@@ -10,6 +10,7 @@ let testmove = 1;
 let timer;
 let running = false;//遊戲開始沒
 let badappale = false;
+let stone = 0;
 let mapArray = [
     //大概先15*15
     //空白 == 0   //障礙 == -1 //食物 == -2 //蘑菇 == -3
@@ -200,6 +201,7 @@ function writeStone(){
         randomX = Math.floor(Math.random()*mapsize);
         randomY = Math.floor(Math.random()*mapsize);
     }
+    stone++;
     mapArray[randomY][randomX]=-1;  
 }
 
@@ -370,7 +372,7 @@ function move(){
         loadmap();
     }else{
         clearInterval(timer);
-        if(snacklength==mapsize*mapsize){
+        if(snacklength + stone ==mapsize*mapsize){
         youwin();
         }else{
         losegame();
@@ -442,15 +444,18 @@ function losegame(){
     ctx.fillStyle = '#6C6C6C'; // 设置字体颜色
     ctx.fillText("LOSE !", 52, 550); // 绘制填充文本
     console.log("write lose!!");
-    //顯示開始按鈕
 
 }
 
 function youwin(){
     console.log("you win!!");
     //畫出WIN
-
-    //顯示開始按鈕
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d');
+    ctx.font = '300px Arial'; // 设置字体样式和大小
+    ctx.fillStyle = '#6C6C6C'; // 设置字体颜色
+    ctx.fillText("WIN !", 52, 550); // 绘制填充文本
+    console.log("write win!!");
 }
 
 function reset(){
@@ -479,6 +484,7 @@ function reset(){
         testmove = 1;
         running = false;
         badappale = false;
+        stone = 0;
 
 }
 
