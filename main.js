@@ -440,9 +440,9 @@ function losegame(){
     //畫出LOSE
     let canvas = document.getElementById('myCanvas');
     let ctx = canvas.getContext('2d');
-    ctx.font = '300px Arial'; // 设置字体样式和大小
+    ctx.font = '200px Arial'; // 设置字体样式和大小
     ctx.fillStyle = '#6C6C6C'; // 设置字体颜色
-    ctx.fillText("LOSE !", 52, 550); // 绘制填充文本
+    ctx.fillText("LOSE !", 35, 373); // 绘制填充文本
     console.log("write lose!!");
 
 }
@@ -452,9 +452,9 @@ function youwin(){
     //畫出WIN
     let canvas = document.getElementById('myCanvas');
     let ctx = canvas.getContext('2d');
-    ctx.font = '300px Arial'; // 设置字体样式和大小
+    ctx.font = '200px Arial'; // 设置字体样式和大小
     ctx.fillStyle = '#6C6C6C'; // 设置字体颜色
-    ctx.fillText("WIN !", 52, 550); // 绘制填充文本
+    ctx.fillText("WIN !", 60, 373); // 绘制填充文本
     console.log("write win!!");
 }
 
