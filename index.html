@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>貪食蛇</h1>
+        <div class="gamediv">
+            
+            <canvas id="myCanvas" width="900" height="900"></canvas>
+            
+            <div id="gamemode">
+                <p id="speed">speed
+                    <span id="speedDisplay">2.0</span>
+                    <button id="lowerSpeed">-</button>
+                    <button id="higherSpeed">+ </button>
+                </p>
+                <p id="mode">mode :
+                    <span id="modeDisplay">一般</span>
+                    <br>
+                    <input id="mode1" name="option" type="radio" checked> 一般
+                    <br>
+                    <input id="mode2" name="option" type="radio"> 障礙
+                    <br>
+                    <input id="mode3" name="option" type="radio"> 蘑菇
+                </p>
+                <input id="run" type="button" value="開始遊戲">
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>
